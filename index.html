@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frice Website</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+
+        body {
+            font-family: cursive;
+            /* font-size: 26px; */
+            font-variant: small-caps;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: pink;
+            color: black;
+        }
+        header {
+            background-color: #ff69b4;
+            padding: 1rem;
+            text-align: center;
+        }
+        main {
+            padding: 2rem;
+            position: relative;
+        }
+        .content {
+            max-width: 60%;
+        }
+        .image-container {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            width: 300px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Frice</h1>
+    </header>
+    <main>
+        <div class="content">
+            <h2>About Frice</h2>
+            <p>Frice is a delicious and versatile food. Here you can learn more about it and discover amazing recipes!</p>
+            
+            <h2>Popular Frice Dishes</h2>
+            <ul>
+                <li>Classic Frice</li>
+                <li>Spicy Frice</li>
+                <li>Vegetarian Frice</li>
+            </ul>
+        </div>
+        <div class="image-container">
+            <img src="img/frice.png" alt="Delicious Frice">
+        </div>
+    </main>
+</body>
+</html>
